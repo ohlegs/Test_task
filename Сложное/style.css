@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   background-image: url("./img/dust.png");
-  cursor: none;
+  /* cursor: none; */
 }
 
 .wrapper {
@@ -26,9 +30,10 @@ body {
 }
 
 .square {
-  position: relative;
   width: 15vw;
   height: 15vw;
   background-color: #8080807a;
   margin: 20px;
+  transform: rotate(0deg);
+  transition: 0.5s;
 }
